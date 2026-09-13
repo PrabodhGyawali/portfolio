@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabodh Gyawali — Robotics, firmware, software</title>
+    <meta name="description" content="Portfolio of Prabodh Gyawali. CS with AI at the University of Leeds. Robotics, firmware, and software — Wardy 3DOF gripper arm, Equilibria.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <a class="skip" href="#about">Skip to content</a>
+
+    <header class="site-header">
+        <a class="brand" href="#about">
+            <span class="brand-mark">PG</span>
+            <span class="brand-name">Prabodh Gyawali</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section about">
+            <div class="about-copy">
+                <p class="kicker">About</p>
+                <h1>Prabodh Gyawali</h1>
+                <p class="lede">CS student and embedded-systems builder in Leeds. Robotics software, firmware, and interfaces that shipped.</p>
+                <p class="about-body">Studying Computer Science with Artificial Intelligence at the University of Leeds. Technical Director for Gryphon Racing Leeds AI (SLAM, path planning, control). Learning firmware as an IG Tech apprentice: Arm Cortex-M, Embedded C, RTOS, wireless comms.</p>
+                <ul class="facts">
+                    <li>
+                        <span class="fact-label">Based</span>
+                        <span class="fact-value">Leeds, UK</span>
+                    </li>
+                    <li>
+                        <span class="fact-label">Study</span>
+                        <span class="fact-value">CS with AI · 2023–2026</span>
+                    </li>
+                    <li>
+                        <span class="fact-label">Focus</span>
+                        <span class="fact-value">Robotics + firmware</span>
+                    </li>
+                </ul>
+            </div>
+            <figure class="about-media">
+                <img src="assets/headshots/chess.jpg" alt="Prabodh Gyawali at a chessboard">
+            </figure>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="section-head">
+                <p class="kicker">Skills / focus</p>
+                <h2>Focus areas</h2>
+                <p class="section-deck">A 30-second snapshot. Languages and tools below map to the projects on this page.</p>
+            </div>
+
+            <div class="focus-grid">
+                <article class="focus-card">
+                    <p class="kicker">Robotics</p>
+                    <h3>Mechanisms</h3>
+                    <p>Wardy, a 3DOF gripper arm. 3D-printed parts and sheet-metal structure, designed in SolidWorks.</p>
+                </article>
+                <article class="focus-card">
+                    <p class="kicker">Firmware</p>
+                    <h3>Embedded control</h3>
+                    <p>Embedded C, ESP-IDF, Arm Cortex-M, RTOS, UART/SPI/I2C/BLE. Motor control and gripping on Wardy.</p>
+                </article>
+                <article class="focus-card">
+                    <p class="kicker">Software</p>
+                    <h3>Interfaces that ship</h3>
+                    <p>React and TypeScript, TradingView and WebSockets, Flask, AWS. Equilibria shipped against a 10,000 ARB grant.</p>
+                </article>
+            </div>
+
+            <div class="skill-groups">
+                <div>
+                    <p class="kicker">Languages</p>
+                    <ul class="chips">
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>JavaScript / TypeScript</li>
+                        <li>Assembly (x86/x64)</li>
+                        <li>Rust <span class="chip-note">learning</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="kicker">Systems</p>
+                    <ul class="chips">
+                        <li>ROS 2</li>
+                        <li>Embedded C</li>
+                        <li>ESP-IDF</li>
+                        <li>Arduino</li>
+                        <li>RTOS</li>
+                        <li>SolidWorks</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="kicker">Software stack</p>
+                    <ul class="chips">
+                        <li>React</li>
+                        <li>Flask</li>
+                        <li>Node.js</li>
+                        <li>PostgreSQL</li>
+                        <li>AWS</li>
+                        <li>Docker</li>
+                        <li>Linux</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="section-head">
+                <p class="kicker">Projects</p>
+                <h2>Proof of work</h2>
+                <p class="section-deck">Two featured projects. Sparse on purpose — the grid is ready for more cards.</p>
+            </div>
+
+            <div class="filters" role="group" aria-label="Filter projects by category">
+                <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter" data-filter="robotics" aria-pressed="false">Robotics</button>
+                <button type="button" class="filter" data-filter="software" aria-pressed="false">Software</button>
+                <button type="button" class="filter" data-filter="embedded" aria-pressed="false">Embedded</button>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card" data-cats="robotics embedded">
+                    <div class="project-thumb thumb-gripper" aria-hidden="true">
+                        <span class="thumb-mark">WARDY</span>
+                        <span class="thumb-meta">3DOF gripper</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-title-row">
+                            <h3>Wardy</h3>
+                        </div>
+                        <p>3DOF gripper arm. 3D-printed parts and sheet-metal structure. Motor control and gripping in Embedded C. SolidWorks.</p>
+                        <ul class="tags">
+                            <li>Embedded C</li>
+                            <li>SolidWorks</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card" data-cats="software">
+                    <div class="project-thumb thumb-equilibria" aria-hidden="true">
+                        <span class="thumb-mark">EQ</span>
+                        <span class="thumb-meta">10k ARB grant</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-title-row">
+                            <h3>Equilibria</h3>
+                            <a class="icon-link" href="https://github.com/PrabodhGyawali/GMX-Arb-UI" target="_blank" rel="noopener noreferrer" aria-label="Equilibria UI on GitHub">
+                                <img src="assets/github.svg" alt="">
+                            </a>
+                        </div>
+                        <p>Funding-rate arbitrage interface. TradingView widgets and WebSockets for live data. React, TypeScript. 10,000 ARB grant.</p>
+                        <ul class="tags">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="section-head">
+                <p class="kicker">Contact</p>
+                <h2>Reach me directly</h2>
+                <p class="section-deck">Email is fastest. GitHub has the public code. Phone if you prefer a call.</p>
+            </div>
+            <ul class="contact-list">
+                <li>
+                    <span class="fact-label">Email</span>
+                    <a href="mailto:prabodh.gyawali2005@gmail.com">prabodh.gyawali2005@gmail.com</a>
+                </li>
+                <li>
+                    <span class="fact-label">GitHub</span>
+                    <a href="https://github.com/PrabodhGyawali" target="_blank" rel="noopener noreferrer">github.com/PrabodhGyawali</a>
+                </li>
+                <li>
+                    <span class="fact-label">Phone</span>
+                    <a href="tel:+447466593771">+44 7466 593771</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-note">© 2026 Prabodh Gyawali</p>
+        <p class="footer-note">Leeds, UK</p>
+    </footer>
+
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
