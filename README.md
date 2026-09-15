@@ -1,6 +1,6 @@
 # portfolio
 
-Public GitHub Pages deploy of Prabodh Gyawali’s skill-first site.
+Public GitHub Pages site for Prabodh Gyawali.
 
 - Live (once Pages is on): https://prabodhgyawali.github.io/portfolio/
 - Private source: https://github.com/PrabodhGyawali/Personal-Site
